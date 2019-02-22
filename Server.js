@@ -19,7 +19,7 @@ app.use(express.urlencoded({
 
 app.post('/api/mail', (req, res) => {
 	var reciverString = req.body.reciverString;
-	var listofemails = reciverString.split(",");
+	var listofemails = reciverString.split(", ");
 
 	// This will store emails needed to send.
 	// var listofemails = ["sparashar405@gmail.com", "sahnp77@gmail.com", "sa78787878787@gma.com", "shashank@ilicoinfotech.com"];
